@@ -4,6 +4,7 @@
 * {
 	color: inherit;
 	margin: 0;
+	box-sizing: border-box;
 }
 
 body {
@@ -26,4 +27,12 @@ hr {
 
 img {
 	max-width: 100%;
+}
+
+.container {
+	display: flex;
+	flex-direction: column;
+	div {
+		display: flex;
+	}
 }
