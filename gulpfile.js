@@ -1,12 +1,16 @@
 const { src, dest, watch, series } = require('gulp');
 const sass = require('gulp-sass')(require('sass'));
+const purgeCss = require('gulp-purgecss');
 
 function buildStyles() {
-	return src('shinobi/**/*.scss').pipe(sass()).pipe(dest('css'));
+	return src('shinobi/**/*.scss')
+		.pipe(sass())
+		.pipe(purgeCss({ content: ['*.html'] }))
+		.pipe(dest('css'));
 }
 
 function watchTask() {
-	watch(['shinobi/**/*.scss'], buildStyles);
+	watch(['shinobi/**/*.scss', '*.html'], buildStyles);
 }
 
 exports.default = series(buildStyles, watchTask);
