@@ -28,37 +28,6 @@ img {
   max-width: 100%;
 }
 
-@media (min-width: 0) {
-  .responsive-test {
-    color: red;
-  }
-}
-@media (min-width: 480px) {
-  .responsive-test {
-    color: blue;
-  }
-}
-@media (min-width: 720px) {
-  .responsive-test {
-    color: yellow;
-  }
-}
-@media (min-width: 960px) {
-  .responsive-test {
-    color: black;
-  }
-}
-@media (min-width: 1200px) {
-  .responsive-test {
-    color: pink;
-  }
-}
-@media (min-width: 1400px) {
-  .responsive-test {
-    color: cadetblue;
-  }
-}
-
 .container {
   width: 100%;
   max-width: 1200px;
@@ -433,6 +402,66 @@ img {
     flex-grow: 0;
   }
 }
+.gap-0 > * {
+  padding: 0;
+}
+
+.gap-0 {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.gap-1 > * {
+  padding: 10px;
+}
+
+.gap-1 {
+  margin-left: -10px;
+  margin-right: -10px;
+}
+
+.gap-2 > * {
+  padding: 20px;
+}
+
+.gap-2 {
+  margin-left: -20px;
+  margin-right: -20px;
+}
+
+.gap-3 > * {
+  padding: 30px;
+}
+
+.gap-3 {
+  margin-left: -30px;
+  margin-right: -30px;
+}
+
+.justify-flex-start {
+  justify-content: flex-start;
+}
+
+.justify-flex-end {
+  justify-content: flex-end;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.justify-space-around {
+  justify-content: space-around;
+}
+
+.justify-space-evenly {
+  justify-content: space-evenly;
+}
+
+.justify-space-between {
+  justify-content: space-between;
+}
+
 .text-primary {
   color: #326dee;
 }
@@ -2992,6 +3021,7 @@ img {
   padding-top: 0.75rem;
   padding-bottom: 0.75rem;
   background-color: #d8d8d8;
+  display: inline-block;
 }
 
 .btn-primary {
@@ -3002,6 +3032,7 @@ img {
   padding-top: 0.75rem;
   padding-bottom: 0.75rem;
   background-color: #326dee;
+  display: inline-block;
 }
 .btn-primary:hover {
   background-color: #4a7ef0;
@@ -3015,6 +3046,7 @@ img {
   padding-top: 0.75rem;
   padding-bottom: 0.75rem;
   background-color: #fff;
+  display: inline-block;
   border: 1px solid #326dee;
 }
 .btn-outlined-primary:hover {
@@ -3029,6 +3061,7 @@ img {
   padding-top: 0.75rem;
   padding-bottom: 0.75rem;
   background-color: #326dee;
+  display: inline-block;
   color: #f0bc4a;
 }
 .btn-complement-primary:hover {
@@ -3043,6 +3076,7 @@ img {
   padding-top: 0.75rem;
   padding-bottom: 0.75rem;
   background-color: #1ac886;
+  display: inline-block;
 }
 .btn-secondary:hover {
   background-color: #1ddf95;
@@ -3056,6 +3090,7 @@ img {
   padding-top: 0.75rem;
   padding-bottom: 0.75rem;
   background-color: #fff;
+  display: inline-block;
   border: 1px solid #1ac886;
 }
 .btn-outlined-secondary:hover {
@@ -3070,6 +3105,7 @@ img {
   padding-top: 0.75rem;
   padding-bottom: 0.75rem;
   background-color: #1ac886;
+  display: inline-block;
   color: #df1d66;
 }
 .btn-complement-secondary:hover {
@@ -3084,6 +3120,7 @@ img {
   padding-top: 0.75rem;
   padding-bottom: 0.75rem;
   background-color: #d32752;
+  display: inline-block;
 }
 .btn-error:hover {
   background-color: #da3961;
@@ -3097,6 +3134,7 @@ img {
   padding-top: 0.75rem;
   padding-bottom: 0.75rem;
   background-color: #fff;
+  display: inline-block;
   border: 1px solid #d32752;
 }
 .btn-outlined-error:hover {
@@ -3111,6 +3149,7 @@ img {
   padding-top: 0.75rem;
   padding-bottom: 0.75rem;
   background-color: #d32752;
+  display: inline-block;
   color: #39dab2;
 }
 .btn-complement-error:hover {
@@ -3125,6 +3164,7 @@ img {
   padding-top: 0.75rem;
   padding-bottom: 0.75rem;
   background-color: #f6c31c;
+  display: inline-block;
 }
 .btn-info:hover {
   background-color: #f7c935;
@@ -3138,6 +3178,7 @@ img {
   padding-top: 0.75rem;
   padding-bottom: 0.75rem;
   background-color: #fff;
+  display: inline-block;
   border: 1px solid #f6c31c;
 }
 .btn-outlined-info:hover {
@@ -3152,6 +3193,7 @@ img {
   padding-top: 0.75rem;
   padding-bottom: 0.75rem;
   background-color: #f6c31c;
+  display: inline-block;
   color: #3562f7;
 }
 .btn-complement-info:hover {
@@ -3166,6 +3208,7 @@ img {
   padding-top: 0.75rem;
   padding-bottom: 0.75rem;
   background-color: #1919e6;
+  display: inline-block;
 }
 .btn-blue:hover {
   background-color: #3030e9;
@@ -3179,6 +3222,7 @@ img {
   padding-top: 0.75rem;
   padding-bottom: 0.75rem;
   background-color: #fff;
+  display: inline-block;
   border: 1px solid #1919e6;
 }
 .btn-outlined-blue:hover {
@@ -3193,6 +3237,7 @@ img {
   padding-top: 0.75rem;
   padding-bottom: 0.75rem;
   background-color: #1919e6;
+  display: inline-block;
   color: #e9e930;
 }
 .btn-complement-blue:hover {
@@ -3207,6 +3252,7 @@ img {
   padding-top: 0.75rem;
   padding-bottom: 0.75rem;
   background-color: #e61919;
+  display: inline-block;
 }
 .btn-red:hover {
   background-color: #e93030;
@@ -3220,6 +3266,7 @@ img {
   padding-top: 0.75rem;
   padding-bottom: 0.75rem;
   background-color: #fff;
+  display: inline-block;
   border: 1px solid #e61919;
 }
 .btn-outlined-red:hover {
@@ -3234,6 +3281,7 @@ img {
   padding-top: 0.75rem;
   padding-bottom: 0.75rem;
   background-color: #e61919;
+  display: inline-block;
   color: #30e9e9;
 }
 .btn-complement-red:hover {
@@ -3248,6 +3296,7 @@ img {
   padding-top: 0.75rem;
   padding-bottom: 0.75rem;
   background-color: #e6e619;
+  display: inline-block;
 }
 .btn-yellow:hover {
   background-color: #e9e930;
@@ -3261,6 +3310,7 @@ img {
   padding-top: 0.75rem;
   padding-bottom: 0.75rem;
   background-color: #fff;
+  display: inline-block;
   border: 1px solid #e6e619;
 }
 .btn-outlined-yellow:hover {
@@ -3275,6 +3325,7 @@ img {
   padding-top: 0.75rem;
   padding-bottom: 0.75rem;
   background-color: #e6e619;
+  display: inline-block;
   color: #3030e9;
 }
 .btn-complement-yellow:hover {
@@ -3289,6 +3340,7 @@ img {
   padding-top: 0.75rem;
   padding-bottom: 0.75rem;
   background-color: #19e635;
+  display: inline-block;
 }
 .btn-green:hover {
   background-color: #30e949;
@@ -3302,6 +3354,7 @@ img {
   padding-top: 0.75rem;
   padding-bottom: 0.75rem;
   background-color: #fff;
+  display: inline-block;
   border: 1px solid #19e635;
 }
 .btn-outlined-green:hover {
@@ -3316,6 +3369,7 @@ img {
   padding-top: 0.75rem;
   padding-bottom: 0.75rem;
   background-color: #19e635;
+  display: inline-block;
   color: #e930cf;
 }
 .btn-complement-green:hover {
@@ -3330,6 +3384,7 @@ img {
   padding-top: 0.75rem;
   padding-bottom: 0.75rem;
   background-color: #ffa600;
+  display: inline-block;
 }
 .btn-orange:hover {
   background-color: #ffaf1a;
@@ -3343,6 +3398,7 @@ img {
   padding-top: 0.75rem;
   padding-bottom: 0.75rem;
   background-color: #fff;
+  display: inline-block;
   border: 1px solid #ffa600;
 }
 .btn-outlined-orange:hover {
@@ -3357,6 +3413,7 @@ img {
   padding-top: 0.75rem;
   padding-bottom: 0.75rem;
   background-color: #ffa600;
+  display: inline-block;
   color: #1a6aff;
 }
 .btn-complement-orange:hover {
@@ -3371,6 +3428,7 @@ img {
   padding-top: 0.75rem;
   padding-bottom: 0.75rem;
   background-color: #9900ff;
+  display: inline-block;
 }
 .btn-purple:hover {
   background-color: #a31aff;
@@ -3384,6 +3442,7 @@ img {
   padding-top: 0.75rem;
   padding-bottom: 0.75rem;
   background-color: #fff;
+  display: inline-block;
   border: 1px solid #9900ff;
 }
 .btn-outlined-purple:hover {
@@ -3398,6 +3457,7 @@ img {
   padding-top: 0.75rem;
   padding-bottom: 0.75rem;
   background-color: #9900ff;
+  display: inline-block;
   color: #75ff1a;
 }
 .btn-complement-purple:hover {
@@ -3412,6 +3472,7 @@ img {
   padding-top: 0.75rem;
   padding-bottom: 0.75rem;
   background-color: #808080;
+  display: inline-block;
 }
 .btn-gray:hover {
   background-color: #8d8d8d;
@@ -3425,6 +3486,7 @@ img {
   padding-top: 0.75rem;
   padding-bottom: 0.75rem;
   background-color: #fff;
+  display: inline-block;
   border: 1px solid #808080;
 }
 .btn-outlined-gray:hover {
@@ -3439,6 +3501,7 @@ img {
   padding-top: 0.75rem;
   padding-bottom: 0.75rem;
   background-color: #808080;
+  display: inline-block;
   color: #8d8d8d;
 }
 .btn-complement-gray:hover {
@@ -3453,6 +3516,7 @@ img {
   padding-top: 0.75rem;
   padding-bottom: 0.75rem;
   background-color: black;
+  display: inline-block;
 }
 .btn-black:hover {
   background-color: #0d0d0d;
@@ -3466,6 +3530,7 @@ img {
   padding-top: 0.75rem;
   padding-bottom: 0.75rem;
   background-color: #fff;
+  display: inline-block;
   border: 1px solid black;
 }
 .btn-outlined-black:hover {
@@ -3480,6 +3545,7 @@ img {
   padding-top: 0.75rem;
   padding-bottom: 0.75rem;
   background-color: black;
+  display: inline-block;
   color: #0d0d0d;
 }
 .btn-complement-black:hover {
@@ -3494,6 +3560,7 @@ img {
   padding-top: 0.75rem;
   padding-bottom: 0.75rem;
   background-color: white;
+  display: inline-block;
 }
 .btn-white:hover {
   background-color: white;
@@ -3507,6 +3574,7 @@ img {
   padding-top: 0.75rem;
   padding-bottom: 0.75rem;
   background-color: #fff;
+  display: inline-block;
   border: 1px solid white;
 }
 .btn-outlined-white:hover {
@@ -3521,6 +3589,7 @@ img {
   padding-top: 0.75rem;
   padding-bottom: 0.75rem;
   background-color: white;
+  display: inline-block;
   color: white;
 }
 .btn-complement-white:hover {

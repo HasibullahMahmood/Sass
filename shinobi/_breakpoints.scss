@@ -41,26 +41,26 @@ $breakpoints: (
 	}
 }
 
-.responsive-test {
-	@include xs {
-		color: red;
-	}
+// .responsive-test {
+// 	@include xs {
+// 		color: red;
+// 	}
 
-	@include sm {
-		color: blue;
-	}
+// 	@include sm {
+// 		color: blue;
+// 	}
 
-	@include md {
-		color: yellow;
-	}
-	@include lg {
-		color: black;
-	}
+// 	@include md {
+// 		color: yellow;
+// 	}
+// 	@include lg {
+// 		color: black;
+// 	}
 
-	@include xl {
-		color: pink;
-	}
-	@include breakpoint(1400px) {
-		color: cadetblue;
-	}
-}
+// 	@include xl {
+// 		color: pink;
+// 	}
+// 	@include breakpoint(1400px) {
+// 		color: cadetblue;
+// 	}
+// }
